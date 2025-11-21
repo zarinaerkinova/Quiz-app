@@ -12,19 +12,54 @@ let questionIndex = 0;
 
 let questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        answer: "Paris"
+        question: "Which country has three official capital cities?",
+        options: ["Australia", "South Africa", "India", "Brazil"],
+        answer: "South Africa"
     },
     {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        answer: "4"
+        question: "Which element is liquid at standard room temperature?",
+        options: ["Mercury", "Sodium", "Lead", "Titanium"],
+        answer: "Mercury"
     },
     {
-        question: "What is the largest planet in our solar system?",
-        options: ["Earth", "Jupiter", "Mars", "Saturn"],
-        answer: "Jupiter"
+        question: "Which is the only country named after a woman?",
+        options: ["Bolivia", "Georgia", "Saint Lucia", "Philippines"],
+        answer: "Saint Lucia"
+    },
+    {
+        question: "What is the escape velocity required to leave Earth's gravity?",
+        options: ["4.2 km/s", "7.9 km/s", "11.2 km/s", "15.4 km/s"],
+        answer: "11.2 km/s"
+    },
+    {
+        question: "Which city is considered the oldest continuously inhabited city?",
+        options: ["Athens", "Damascus", "Jerusalem", "Cairo"],
+        answer: "Damascus"
+    },
+    {
+        question: "Which country has the longest coastline?",
+        options: ["Russia", "Indonesia", "Canada", "Australia"],
+        answer: "Canada"
+    },
+    {
+        question: "Which empire created the first known postal system?",
+        options: ["Roman Empire", "Persian Empire", "Chinese Tang Dynasty", "Byzantine Empire"],
+        answer: "Persian Empire"
+    },
+    {
+        question: "Which river flows through the most countries?",
+        options: ["Amazon", "Danube", "Nile", "Congo"],
+        answer: "Danube"
+    },
+    {
+        question: "What comes once in a minute, twice in a moment, and never in a thousand years?",
+        options: ["The letter 'M'", "A second", "A thought", "A blink"],
+        answer: "The letter 'M'"
+    },
+    {
+        question: "In computer science, which structure uses LIFO logic?",
+        options: ["Queue", "Array", "Linked list", "Stack"],
+        answer: "Stack"
     }
 ];
 
