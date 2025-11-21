@@ -78,29 +78,31 @@ function loadQuestion() {
         options.appendChild(option);
         option.addEventListener('click', function () {
             checkAnswer(option);
-        })
-        nextQuestion.addEventListener('click', function () {
-            options.innerHTML = '';
-            nextQuestion.style.display = 'none';
-            if (questionIndex < questions.length) {
-                loadQuestion();
-            } else {
-                quiz.style.display = 'none';
-                finalScore.innerHTML = `Quiz Over! Your final score is ${score} out of ${questions.length}.`;
-                restart.style.display = 'block';
-                restart.addEventListener('click', function () {
-                    score = 0;
-                    questionIndex = 0;
-                    restart.style.display = 'none';
-                    options.innerHTML = '';
-                    finalScore.innerHTML = '';
-                    quiz.style.display = 'block';
-                    loadQuestion();
-                })
-            }
-        })
+        });
     }
 }
+
+nextQuestion.addEventListener('click', function () {
+    options.innerHTML = '';
+    nextQuestion.style.display = 'none';
+    if (questionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        quiz.style.display = 'none';
+        finalScore.innerHTML = `Quiz Over! Your final score is ${score} out of ${questions.length}.`;
+        restart.style.display = 'block';
+    }
+})
+
+restart.addEventListener('click', function () {
+    score = 0;
+    questionIndex = 0;
+    restart.style.display = 'none';
+    options.innerHTML = '';
+    finalScore.innerHTML = '';
+    quiz.style.display = 'block';
+    loadQuestion();
+})
 
 function checkAnswer(selectedOption) {
     console.log(selectedOption);
