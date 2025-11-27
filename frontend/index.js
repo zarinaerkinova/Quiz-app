@@ -7,7 +7,7 @@ let nextQuestion = document.getElementById('next-question');
 let restart = document.querySelector('.restart');
 let finalScore = document.querySelector('.finalScore');
 
-const api = 'http://localhost:5000';
+const api = 'https://quiz-app-svqk.onrender.com';
 
 let questions = [];
 let score = 0;
